@@ -81,8 +81,8 @@ window.onload = () => {
     for(j=0;j<audios.length;j++){
       indexes.push(names.indexOf(decodeURI(audios[j].src.split("co/")[1].split(".mp3")[0])));
     }
-    document.getElementById("permLink").innerText = window.location.href.split('io/')[0]+"io/perma.html?list="+indexes.join(",");
-    document.getElementById("permLink").href = window.location.href.split('io/')[0]+"io/perma.html?list="+indexes.join(",");
+    document.getElementById("permLink").innerText = window.location.href
+    document.getElementById("permLink").href = window.location.href
     document.getElementById("nfils").innerText = indexes.length;
     let loaded = 1;
     proms = uris.map(uri => fetch(uri).then((r) => {alertBox("Started loading file #"+loaded);loaded++;return r.blob()}));
