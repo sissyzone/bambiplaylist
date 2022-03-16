@@ -1,5 +1,5 @@
 account_id = ""
-name = "test"
+name = "bambiplaylist"
 type = "webpack"
 workers_dev = true
 site = { bucket = "./public" }
