@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --> 
+  <title>Bambi Playlist Creator | Permalink</title> 
+  <link href="css/bootstrap.min.css" rel="stylesheet"> 
+  <link href="css/style.css" rel="stylesheet"> 
+  <meta name="description" content="Bambi Playlist Creator, a sharing/creation platform for Bambi Sleep Playlists. This page has a bunch of playlists to get started with!" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EWDFYH4Z6D"></script> 
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-EWDFYH4Z6D');
+  </script> 
+</head>    
+
+<body>
+  <ul>
+    <li class="s"><a href="/">Home</a></li>
+    <li class="s"><a href="/about.html">About</a></li>
+    <li class="s"><a href="/perma.html">Perma</a></li>
+  </ul>
+  <div class="container" style="width: 650px;"> 
+    <div class="row">
+      <div id="alertBoxs"></div>
+      <div class="col-lg-12">
+        <h1 class="text-center">Bambi Playlist Creator v1.0.2</h1>
+        <h3 style="color:red;">This may take up to 1 minute to load all files now</h3>
+        <br />
+        <div id="content">
+          <hr />
+          <form onInput="inputHandle();" onSubmit="return false;">
+            <h3>Click play to listen!</h3>
+            <br><span id="nfils">Loading...</span> Files, Playlist duration: <span id="dur">Loading... (this may take up to 30 seconds)</span><br>
+            <button id="play" class="btn btn-primary">Play</button><button id="stop" class="btn btn-primary">Pause</button>
+            <a id="audio_download"></a>
+            <hr/>
+          </form>
+          <p class="text-center">Permalink: <a id="permLink" href=""></a></p>
+          <h3>My Favs</h3>
+          <p><a href="/perma.html?list=35,2,3,5,37,8,10">Bambi Makeover (thanks to Bambi Sparkles#9764)</a>
+          <br><a href="/perma.html?list=1,2,4,8,33,14,28,34,18,9,10">Ultimate Brain Fry (thanks to Curiouser#8137)</a></p>
+          <h3>Getting Started</h3>
+          <br>A lot of Bambis recommend that you start off wit the simple 1,2,3,10 file for complete beginners. Personally, I started with this (looped for a bit) and then went onto the callendar
+          <p><a href="/perma.html?list=1,2,3,10">Beginner Playlist</a></p>
+          <h3>Bambi calendar</h3>
+          <p><a href="/perma.html?list=1,2,3,27,6,7,8,10">Playlist 1 for 4 weeks</a>
+          <br><a href="/perma.html?list=1,2,3,27,28,29,6,7,8,9,32,33,34,10">Playlist 2 for the next 4 weeks after the first 4 weeks have passed.</a>
+          <br><a href="/perma.html?list=11,27,28,29,13,14,32,33,34,15">Playlist 3 for additional 4 weeks. You have to listen to the Refresher-Playlist at this page, at least two times a week from this point on and to Playlist 3 on all other days.</a>
+          <br><a href="/perma.html?list=11,27,28,18,29,13,17,14,32,33,34,15">Playlist 4 for additional 4 weeks. You have to listen to the Refresher-Playlist at this page, at least two times a week from this point on and to Playlist 4 on all other days.</a>
+          <br><a href="/perma.html?list=24,11,3,27,28,29,6,7,8,9,32,33,34,15">Refresher-Playlist</a>
+          <br><a href="/perma.html?list=11,27,28,18,29,13,17,26,14,32,33,34,15">Fashionista</a>
+          <br><a href="/perma.html?list=11,24,27,35,36,32,33,34,40">Beauty salon</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div><br><br><br><br><br><br><br><br><br>
+  <footer class="footer">
+    <div class="footer-copyright text-center py-3">
+      © KatieGirl 2021 | KatieGirl#3059 <a href="https://discord.gg/kHxKqRC3vs">https://discord.gg/kHxKqRC3vs</a> - All of the Bambi/Bambi Sleep copyright goes to the creator or Bambi Sleep (<a href="https://bambisleep.blogspot.com/">https://bambisleep.blogspot.com/</a>)
+    </div>
+  </footer>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
