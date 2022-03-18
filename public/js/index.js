@@ -68,8 +68,8 @@ window.onload = () => {
     audioos = audioos.split(",");
       let uris = [];
     for(i=0;i<audioos.length;i++){
-      audios.push(new Audio("https://BambiPlaylistCORSServer.katiesarah1.repl.co/"+names[parseInt(audioos[i])]+".mp3"));
-      uris.push("https://BambiPlaylistCORSServer.katiesarah1.repl.co/"+names[parseInt(audioos[i])]+".mp3");
+      audios.push(new Audio("https://bambiproxy.katiegirlsarah.workers.dev/"+names[parseInt(audioos[i])]+".mp3"));
+      uris.push("https://bambiproxy.katiegirlsarah.workers.dev/"+names[parseInt(audioos[i])]+".mp3");
     } 
     audios.forEach(function(sound) {
       if(detectBrowser()=="Firefox"){
@@ -79,7 +79,7 @@ window.onload = () => {
     });
     indexes = [];
     for(j=0;j<audios.length;j++){
-      indexes.push(names.indexOf(decodeURI(audios[j].src.split("co/")[1].split(".mp3")[0])));
+      indexes.push(names.indexOf(decodeURI(audios[j].src.split("dev/")[1].split(".mp3")[0])));
     }
     document.getElementById("permLink").innerText = window.location.href
     document.getElementById("permLink").href = window.location.href
@@ -103,7 +103,7 @@ let inputHandle = (e) => {
   active = [];
   for(i=0;i<list.length;i++){ 
     if(list[i].checked){  
-      active.push("https://BambiPlaylistCORSServer.katiesarah1.repl.co/"+names[i]+".mp3"); 
+      active.push("https://bambiproxy.katiegirlsarah.workers.dev/"+names[i]+".mp3"); 
     }   
   }  
   renderItems(active)
@@ -129,7 +129,7 @@ const renderItems = (data) =>{
     var textnode = document.createElement(`a`);
     textnode.className = "ss";
     textnode.href = `${num}`;
-    textnode.innerText = `${names[names.indexOf(decodeURI(num.split("co/")[1].split(".mp3")[0]))]}`;
+    textnode.innerText = `${names[names.indexOf(decodeURI(num.split("dev/")[1].split(".mp3")[0]))]}`;
     node.appendChild(textnode);
     list2.appendChild(node)
   })
@@ -195,7 +195,7 @@ let create = () => {
   });
   indexes = [];
   for(j=0;j<audios.length;j++){
-    indexes.push(names.indexOf(decodeURI(audios[j].src.split("co/")[1].split(".mp3")[0])));
+    indexes.push(names.indexOf(decodeURI(audios[j].src.split("dev/")[1].split(".mp3")[0])));
   }
   document.getElementById("permLink").innerText = window.location.href+"perma.html?list="+indexes.join(",");
   document.getElementById("permLink").href = window.location.href+"perma.html?list="+indexes.join(",");
